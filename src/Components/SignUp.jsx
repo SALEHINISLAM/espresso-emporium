@@ -20,7 +20,7 @@ const SignUp = (props) => {
           
           const user={email, name}
 
-          fetch(`http://localhost:5000/user`,{
+          fetch(`https://espresso-emporium-server-git-main-salehinislams-projects.vercel.app/user`,{
             method:'POST',
             headers:{
               'content-type':'application/json'

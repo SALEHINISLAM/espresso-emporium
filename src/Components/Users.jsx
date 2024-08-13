@@ -18,7 +18,7 @@ const Users = () => {
     })
     .then(result=>{
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/user/${id}`,{
+        fetch(`https://espresso-emporium-server-git-main-salehinislams-projects.vercel.app/user/${id}`,{
           method:'DELETE'
         })
         .then(response=>response.json())

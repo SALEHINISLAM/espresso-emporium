@@ -22,7 +22,7 @@ const UpdateCoffee = props => {
         const updatedCoffee={name, chef, supplier, taste, category, details, photo,price}
         console.log(updatedCoffee);
         //send data 
-        fetch(`http://localhost:5000/coffee/${_id}`,{
+        fetch(`https://espresso-emporium-server-git-main-salehinislams-projects.vercel.app/coffee/${_id}`,{
             method:'PUT',
             headers:{
                 'content-type':"application/json"

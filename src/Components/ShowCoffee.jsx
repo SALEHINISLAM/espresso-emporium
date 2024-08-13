@@ -5,7 +5,7 @@ import CoffeeCard from './coffeeCard';
 const ShowCoffee = props => {
     const [coffees, setCoffees]=useState([]);
     useEffect(()=>{
-        fetch(`http://localhost:5000/coffee`)
+        fetch(`https://espresso-emporium-server-git-main-salehinislams-projects.vercel.app/coffee`)
         .then(res=>res.json())
         .then(data=>setCoffees(data))
     },[])

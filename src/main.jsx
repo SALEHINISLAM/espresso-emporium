@@ -28,7 +28,7 @@ const router=createBrowserRouter([
       {
         path:'/updateCoffee/:id',
         element: <UpdateCoffee/>,
-        loader:({params})=>fetch(`http://localhost:5000/coffee/${params.id}`)
+        loader:({params})=>fetch(`https://espresso-emporium-server-git-main-salehinislams-projects.vercel.app/coffee/${params.id}`)
       },
       {
         path:'/signup',
@@ -37,17 +37,17 @@ const router=createBrowserRouter([
       {
         path:'/login',
         element: <Login/>,
-        loader:()=>fetch(`http://localhost:5000/users`)
+        loader:()=>fetch(`https://espresso-emporium-server-git-main-salehinislams-projects.vercel.app/users`)
       },
       {
         path:'/users',
         element:<Users/>,
-        loader:()=>fetch(`http://localhost:5000/users`)
+        loader:()=>fetch(`https://espresso-emporium-server-git-main-salehinislams-projects.vercel.app/users`)
       },
       {
         path:`/coffeeDetails/:id`,
         element:<CoffeeDetails/>,
-        loader:({params})=>fetch(`http://localhost:5000/coffee/${params.id}`),
+        loader:({params})=>fetch(`https://espresso-emporium-server-git-main-salehinislams-projects.vercel.app/coffee/${params.id}`),
       }
     ]
   },
