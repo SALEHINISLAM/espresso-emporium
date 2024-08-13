@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const FollowUs = props => {
     return (
         <div className='bg-white'>
-            <div className="container mx-auto text-center p-4 py-12">
+            <div className="container mx-auto text-center p-4 py-12 flex flex-col justify-center items-center gap-7">
                 <h4 className='text-xl text-gray-600'>
                     Follow Us Now
                 </h4>

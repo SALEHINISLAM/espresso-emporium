@@ -20,7 +20,7 @@ const Login = props => {
           const getUser=users.find(user=>user.email===email)
           if (getUser) {
             console.log(getUser);
-            toast.success('Hi'+ getUser.name);
+            toast.success('Hi '+ getUser.name);
           }
           })
           .catch(error=>{
